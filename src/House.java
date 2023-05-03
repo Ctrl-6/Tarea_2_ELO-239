@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class House extends Pane {
     public House(Scanner in) {
         // reading <#_doors> <#_windows> <#_PIRs>
+        // CAMILO CHUPALo
         in.nextInt();
         int numWindows = in.nextInt();
         in.nextInt();
