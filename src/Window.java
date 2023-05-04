@@ -17,8 +17,10 @@ public class Window {
             state = State.CLOSE;
             wView.startClosing();
         }
+
     }
     public void finishMovement() { // is called when this window ends closing or opening
+        System.out.println("ENTRA FINAL MOVIMIENTO");
         if (state == State.CLOSE) {
             magneticSensor.setState(SwitchState.CLOSE);
         } else {

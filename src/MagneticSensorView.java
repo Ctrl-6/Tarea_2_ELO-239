@@ -5,10 +5,13 @@ import javafx.scene.shape.Rectangle;
 public class MagneticSensorView extends Group {
     public MagneticSensorView () {
         switchView = new Rectangle(6,6);
-        setCloseView();
+
         magnetView = new Rectangle(6,6);
         magnetView.setFill(Color.BLACK);
+        switchView.setFill(Color.RED);
         getChildren().addAll(magnetView,switchView);
+        setCloseView();
+        
     }
     public void setCloseView(){
         magnetView.setTranslateX(0);
